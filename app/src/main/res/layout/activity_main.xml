@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="24dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/resortName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-black"
+            android:text="Prudent Sight."
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/bellowHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resortName"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-black"
+            android:padding="10dp"
+            android:text="prudentsights@gmail.com"
+            android:textSize="19sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewStarter"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resortName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/starter" />
+
+                <TextView
+                    android:id="@+id/menuStater"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="18sp"
+                    android:text="Starter" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewMain"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardViewStarter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="260dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/main"
+                    />
+                <TextView
+                    android:id="@+id/menuMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Main" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>
+
+
+
+
+
+
+
